@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,17 +51,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -74,7 +92,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -90,16 +108,17 @@
 
 
 
-<meta name="description" content="title: Linux一些服务的搭建过程categories: Linuxtags: - 服务器搭建远程登录 安装ssh协议    sudo apt-get install openssh-server  windows系统上登录    借助secureCRT软件。new session–&amp;gt;选择ssh2协议–&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务">
+<meta name="description" content="远程登录 安装ssh协议    sudo apt-get install openssh-server  windows系统上登录    借助secureCRT软件。new session–&amp;gt;选择ssh2协议–&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务    sudo apt-get install samba  配置smb.conf文件 sudo vi /e">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yoursite.com/2017/05/14/Linux一些服务的搭建过程/index.html">
+<meta property="og:title" content="文件服务器搭建过程">
+<meta property="og:url" content="http://yoursite.com/2017/05/14/文件服务器搭建过程/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="title: Linux一些服务的搭建过程categories: Linuxtags: - 服务器搭建远程登录 安装ssh协议    sudo apt-get install openssh-server  windows系统上登录    借助secureCRT软件。new session–&amp;gt;选择ssh2协议–&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务">
-<meta property="og:updated_time" content="2017-05-14T08:25:20.304Z">
+<meta property="og:description" content="远程登录 安装ssh协议    sudo apt-get install openssh-server  windows系统上登录    借助secureCRT软件。new session–&amp;gt;选择ssh2协议–&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务    sudo apt-get install samba  配置smb.conf文件 sudo vi /e">
+<meta property="og:updated_time" content="2017-05-14T09:06:11.347Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog">
-<meta name="twitter:description" content="title: Linux一些服务的搭建过程categories: Linuxtags: - 服务器搭建远程登录 安装ssh协议    sudo apt-get install openssh-server  windows系统上登录    借助secureCRT软件。new session–&amp;gt;选择ssh2协议–&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务">
+<meta name="twitter:title" content="文件服务器搭建过程">
+<meta name="twitter:description" content="远程登录 安装ssh协议    sudo apt-get install openssh-server  windows系统上登录    借助secureCRT软件。new session–&amp;gt;选择ssh2协议–&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务    sudo apt-get install samba  配置smb.conf文件 sudo vi /e">
 
 
 
@@ -127,16 +146,16 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/14/Linux一些服务的搭建过程/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/14/文件服务器搭建过程/"/>
 
 
 
 
 
-  <title> | Blog</title>
+  <title>文件服务器搭建过程 | Blog</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
 
@@ -175,7 +194,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Better Life</p>
       
   </div>
 
@@ -224,6 +243,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -253,7 +282,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/14/Linux一些服务的搭建过程/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/14/文件服务器搭建过程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feather Sun">
@@ -270,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">文件服务器搭建过程</h1>
         
 
         <div class="post-meta">
@@ -282,7 +311,7 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-14T15:49:49+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-14T17:00:29+08:00">
                 2017-05-14
               </time>
             
@@ -292,6 +321,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -317,8 +368,7 @@
       
 
       
-        <p>title: Linux一些服务的搭建过程<br>categories: Linux<br>tags:</p>
-<h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="- 服务器搭建"></a>- 服务器搭建</h2><h1 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h1><ul>
+        <h1 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h1><ul>
 <li><p>安装ssh协议</p>
 <p>   sudo apt-get install openssh-server</p>
 </li>
@@ -447,6 +497,12 @@ sudo ln -s /opt/FTP /srv/ftp
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
 
       
         
@@ -543,7 +599,25 @@ sudo ln -s /opt/FTP /srv/ftp
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Kategorien</span>
+              </a>
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -575,7 +649,7 @@ sudo ln -s /opt/FTP /srv/ftp
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器搭建"><span class="nav-number">1.</span> <span class="nav-text">- 服务器搭建</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#远程登录"><span class="nav-number"></span> <span class="nav-text">远程登录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建samba服务"><span class="nav-number"></span> <span class="nav-text">搭建samba服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建git服务器"><span class="nav-number"></span> <span class="nav-text">搭建git服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置ftp服务器"><span class="nav-number"></span> <span class="nav-text">设置ftp服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件服务器同步"><span class="nav-number"></span> <span class="nav-text">文件服务器同步</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#远程登录"><span class="nav-number">1.</span> <span class="nav-text">远程登录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建samba服务"><span class="nav-number">2.</span> <span class="nav-text">搭建samba服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建git服务器"><span class="nav-number">3.</span> <span class="nav-text">搭建git服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置ftp服务器"><span class="nav-number">4.</span> <span class="nav-text">设置ftp服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件服务器同步"><span class="nav-number">5.</span> <span class="nav-text">文件服务器同步</span></a></li></ol></div>
             
 
           </div>
