@@ -353,45 +353,40 @@
           
             <h1 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h1><ul>
 <li><p>安装ssh协议</p>
-<p>   sudo apt-get install openssh-server</p>
-</li>
+<pre><code>sudo apt-get install openssh-server
+</code></pre></li>
 <li><p>windows系统上登录</p>
-<p>   借助secureCRT软件。new session–&gt;选择ssh2协议–&gt;Hostname为服务器IP地址</p>
-</li>
+<pre><code>借助secureCRT软件。new session--&gt;选择ssh2协议--&gt;Hostname为服务器IP地址
+</code></pre></li>
 </ul>
 <h1 id="搭建samba服务"><a href="#搭建samba服务" class="headerlink" title="搭建samba服务"></a>搭建samba服务</h1><ul>
 <li><p>安装服务</p>
-<p>   sudo apt-get install samba</p>
-</li>
-<li><p>配置smb.conf文件</p>
-<pre><code>sudo vi /etc/samba/smb.conf
+<pre><code>sudo apt-get install samba
 </code></pre></li>
-</ul>
-<pre><code>[Share]       #这个名字就是搭建好samba后，在windows上看到的文件夹名称 
+<li><p>配置smb.conf文件</p>
+<pre><code>sudo vi /etc/samba/smb.conf           
+
+[Share]       #这个名字就是搭建好samba后，在windows上看到的文件夹名称 
 comment=Samba Server #描述字段，可以随便写
 path=/opt/share      #想要共享出去的文件夹路径
 browseable =yes      #允许浏览
 writable =yes        #允许写入
-</code></pre><ul>
+</code></pre></li>
 <li><p>增加samba的用户并设置密码 </p>
 <pre><code>sudo smbpasswd -a user #user为服务器上已经存在的用户名，但密码不能相同。
-</code></pre><ul>
+</code></pre></li>
 <li><p>重启smbd服务</p>
-<p> sudo /etc/init.d/smbd restart   或者 sudo service smbd restart</p>
-</li>
+<pre><code>sudo /etc/init.d/smbd restart   或者 sudo service smbd restart
+</code></pre></li>
 <li><p>重启nmbd服务</p>
-<p> sudo /etc/init.d/nmbd restart   或者 sudo service nmbd restart</p>
-</li>
+<pre><code>sudo /etc/init.d/nmbd restart   或者 sudo service nmbd restart
+</code></pre></li>
 <li><p>客户端连接</p>
-<p> window系统上，windows图标键+R，输入linux服务器IP地址。如\192.168.5.2。斜线不能丢</p>
-<h1 id="搭建git服务器"><a href="#搭建git服务器" class="headerlink" title="搭建git服务器"></a>搭建git服务器</h1></li>
+<pre><code>window系统上，windows图标键+R，输入linux服务器IP地址。如\\192.168.5.2。斜线不能丢
+</code></pre><h1 id="搭建git服务器"><a href="#搭建git服务器" class="headerlink" title="搭建git服务器"></a>搭建git服务器</h1></li>
 <li><p>安装ssh协议</p>
-<p> sudo apt-get install openssh-server</p>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
+<pre><code>sudo apt-get install openssh-server
+</code></pre></li>
 <li><p>安装git</p>
 <pre><code>sudo apt-get install git
 </code></pre></li>
@@ -439,11 +434,11 @@ sudo ln -s /opt/FTP /srv/ftp
 <li><p>设置无密码登录</p>
 <ul>
 <li><p>本地生成密钥文件</p>
-<pre><code>ssh-keygen -t rsa
-</code></pre></li>
+<p>  ssh-keygen -t rsa</p>
+</li>
 <li><p>将公钥传送到远程主机上</p>
-<pre><code>ssh-copy-id user@192.168.10.41
-</code></pre></li>
+<p>  ssh-copy-id user@192.168.10.41</p>
+</li>
 </ul>
 </li>
 <li><p>编辑/etc/corntab配置文件</p>
@@ -716,7 +711,7 @@ sudo ln -s /opt/FTP /srv/ftp
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
