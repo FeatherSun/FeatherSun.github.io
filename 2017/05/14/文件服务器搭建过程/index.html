@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/14/文件服务器搭建过程/index.html">
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="远程登录 安装ssh协议 sudo apt-get install openssh-server  windows系统上登录 借助secureCRT软件。new session--&amp;gt;选择ssh2协议--&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务 sudo apt-get install samba  配置smb.conf文件 sudo vi /etc/samb">
-<meta property="og:updated_time" content="2018-01-02T06:01:44.216Z">
+<meta property="og:updated_time" content="2018-01-02T06:19:08.119Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文件服务器搭建过程">
 <meta name="twitter:description" content="远程登录 安装ssh协议 sudo apt-get install openssh-server  windows系统上登录 借助secureCRT软件。new session--&amp;gt;选择ssh2协议--&amp;gt;Hostname为服务器IP地址   搭建samba服务 安装服务 sudo apt-get install samba  配置smb.conf文件 sudo vi /etc/samb">
@@ -433,11 +433,11 @@ sudo ln -s /opt/FTP /srv/ftp
 <li><p>设置无密码登录</p>
 <ul>
 <li><p>本地生成密钥文件</p>
-<p>  ssh-keygen -t rsa</p>
-</li>
+<pre><code>ssh-keygen -t rsa
+</code></pre></li>
 <li><p>将公钥传送到远程主机上</p>
-<p>  ssh-copy-id user@192.168.10.41</p>
-</li>
+<pre><code>ssh-copy-id user@192.168.10.41
+</code></pre></li>
 </ul>
 </li>
 <li><p>编辑/etc/corntab配置文件</p>
